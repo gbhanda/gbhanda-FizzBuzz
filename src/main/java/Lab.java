@@ -15,6 +15,13 @@ public class Lab {
      * divisible by both, return 'FizzBuzz'. If none of these are true, return a blank string "".
      */
     public String FizzBuzzGen(int n){
+        boolean fizz = false;
+        boolean buzz = false;
+        fizz = (n % 3) == 0 ? true : false;
+        buzz = (n % 5) == 0 ? true : false;
+        if(fizz & buzz) return "FizzBuzz";
+        else if(fizz) return "Fizz";
+        else if(buzz) return "Buzz";
         return "";
     }
 }
